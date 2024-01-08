@@ -1,0 +1,54 @@
+.book-room-section {
+    position: relative;
+  }
+  
+  .header {
+    background-image: url('../images/room2.png');
+    background-size: cover;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 3em;
+  }
+  
+  .content {
+    display: flex;
+    background-color: #C8E4D4; 
+    padding: 20px;
+  }
+  
+  .text-column {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .images-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .images-column img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .booking-button {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #223225; 
+    color: white; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 80px;
+  }
+  
+  .booking-button:hover {
+    background-color: #d454a3; 
+  }
+  
