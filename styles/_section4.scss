@@ -33,3 +33,20 @@
     line-height: 1.5;
   }
   
+  /* added this to make the image resize*/
+  @media screen and (max-width: 768px) {
+    .two-column-section {
+      flex-direction: column;
+      height: auto; /* Adjust height as needed */
+    }
+  
+    .right-column {
+      max-width: 100%; /* Occupy full width */
+    }
+  
+    .resized-image {
+      margin-top: 20px; /* Adjust spacing */
+      max-width: 100%; /* Resize image to full width */
+      max-height: auto; /* Allow height to adjust accordingly */
+    }
+  }

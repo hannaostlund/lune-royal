@@ -4,7 +4,7 @@
     justify-content: center;
     background-color: #C8E4D4;
     color: #000000;
-    height: 60vh;
+    min-height: 60vh;
   }
   
   .left-column {
@@ -24,8 +24,12 @@
   }
   
   h2 {
-    font-size: 2em;
     margin-bottom: 10px;
+    font-family: "montecatini-pro-normale", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3em;
+
   }
   
   p {

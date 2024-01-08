@@ -6,7 +6,7 @@ html, body, header, main {
   header {
     background-image: url('/images/top-img.png');
     background-size: cover;
-    height: 100vh; 
+    height: 70vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,8 +27,11 @@ html, body, header, main {
   }
 
   h1 {
-    font-size: 3em; 
     margin-bottom: 10px;
+    font-family: "montecatini-pro-normale", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 7em;
   }
   
   .book-button {
