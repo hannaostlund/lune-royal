@@ -34,20 +34,23 @@
   
   p {
     line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .content-button {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #214229;
+    background-color: #14564B; 
     color: #ffffff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .content-button:hover {
-    background-color: #d454a3;
+    background-color: #e785c1; 
   }
+  
   

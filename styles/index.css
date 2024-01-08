@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/qhy4uik.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 html, body, header, main {
   margin: 0;
   padding: 0;
@@ -8,7 +9,6 @@ header {
   background-image: url("/images/top-img.png");
   background-size: cover;
   height: 70vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -25,28 +25,30 @@ header {
 
 .text-section {
   max-width: 60%;
+  flex: 1;
 }
 
-h1 {
+.home-page-title {
   margin-bottom: 10px;
-  font-family: "montecatini-pro-normale", serif;
   font-weight: 300;
-  font-style: normal;
+  font-family: "montecatini-pro-normale", serif;
   font-size: 7em;
+  margin-top: 30vh;
 }
 
 .book-button {
   display: block;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #adecbb;
+  background-color: #14564B;
   color: white;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .book-button:hover {
-  background-color: #d454a3;
+  background-color: #e785c1;
 }
 
 .two-column-section {
@@ -84,21 +86,23 @@ h2 {
 
 p {
   line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-button {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #214229;
+  background-color: #14564B;
   color: #ffffff;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-button:hover {
-  background-color: #d454a3;
+  background-color: #e785c1;
 }
 
 .card-section {
@@ -121,15 +125,26 @@ p {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: translate(0, 5px);
 }
 
 .card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  font-family: "montecatini-pro-normale", serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #C8E4D4;
 }
 
 .card p {
   line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #C8E4D4;
 }
 
 .book-room-section {
@@ -139,15 +154,17 @@ p {
 .header {
   background-image: url("../images/room2.png");
   background-size: cover;
-  height: 300px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h1 {
+.book-page-title {
   color: white;
-  font-size: 3em;
+  font-size: 6em;
+  font-family: "montecatini-pro-normale", serif;
+  font-weight: 300;
 }
 
 .content {
@@ -196,6 +213,7 @@ h1 {
 .footer-h1 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  font-family: "montecatini-pro-normale", serif;
 }
 
 .footer-text {
@@ -213,7 +231,6 @@ h1 {
   margin: 0 10px;
 }
 
-/* Adjust icon size if needed */
 .social-icons img {
   width: 30px;
   height: 30px;
@@ -223,8 +240,13 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #1d1d1d;
   padding: 20px 20px;
+}
+
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .left-section {
@@ -236,23 +258,35 @@ h1 {
   margin-right: 10px;
 }
 
-.name {
+.brandname {
   color: white;
-  font-weight: lighter;
-  text-transform: uppercase;
+  font-family: "montecatini-pro-normale", serif;
+  display: inline-block;
 }
 
-.contact-link,
-a {
-  text-transform: uppercase;
-  font-weight: lighter;
+.brandname a {
+  color: white;
   text-decoration: none;
-  position: relative;
+  text-transform: uppercase;
+  font-family: "montecatini-pro-normale", serif;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.brandname a:hover {
+  color: #adecbb;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.book-link,
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "montecatini-pro-normale", serif;
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   margin-right: 20px;
 }
 
-a:hover,
-.contact-link:hover {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+.book-link a:hover {
+  color: #adecbb;
 }/*# sourceMappingURL=index.css.map */

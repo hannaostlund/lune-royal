@@ -19,14 +19,25 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
   }
-  
+
+  .card:hover img {
+    transform: translate(0, 5px); 
+}
+
   .card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    font-family: "montecatini-pro-normale", serif;
+    font-weight: 300;
+    font-size: 2em; 
+    color: #C8E4D4;
   }
   
   .card p {
     line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #C8E4D4;
   }
   

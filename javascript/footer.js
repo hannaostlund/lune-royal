@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
             <p class="footer-text">Follow us on social media for the latest updates</p>
         <div class="social-icons">
             <a href="/">
-                <img src="/Images/linkedin.svg" alt="Linkedin icon" />
+                <img src="/Images/instagram.svg" alt="instagram icon" />
             </a>     
             <a href="/">
-                <img src="/images/githubicon.svg" alt="Github icon" />
+                <img src="/images/facebook.svg" alt="facebook icon" />
             </a>     
         </div>
         </div>
