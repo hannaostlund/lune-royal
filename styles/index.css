@@ -92,4 +92,35 @@ p {
 
 .content-button:hover {
   background-color: #d454a3;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  background-color: #14564B;
+}
+
+.card {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  line-height: 1.5;
 }/*# sourceMappingURL=index.css.map */
