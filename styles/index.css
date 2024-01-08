@@ -23,7 +23,7 @@ header {
 }
 
 .text-section {
-  max-width: 60%; /* Adjust the width of the text section */
+  max-width: 60%;
 }
 
 h1 {
@@ -42,5 +42,54 @@ h1 {
 }
 
 .book-button:hover {
+  background-color: #d454a3;
+}
+
+.two-column-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C8E4D4;
+  color: #000000;
+  height: 60vh;
+}
+
+.left-column {
+  padding: 20px;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.right-column {
+  padding: 20px;
+  max-width: 60%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.content-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #214229;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.content-button:hover {
   background-color: #d454a3;
 }/*# sourceMappingURL=index.css.map */
