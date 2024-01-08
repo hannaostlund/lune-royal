@@ -1,0 +1,32 @@
+.name-footer {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Adjust icon size if needed */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
