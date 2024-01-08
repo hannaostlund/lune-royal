@@ -7,6 +7,7 @@
     <title>Book Room</title>
 </head>
 <body>
+  <!--Nav bar -->
   <div class="nav-bar">
     <div class="left-section">
         <div class="logo-icon">
@@ -22,19 +23,48 @@
         <a href="/index.html">Home</a>
     </div>
 </div>
-    <section class="book-room-section">
-        <div class="header">
-          <h1 class="book-page-title">Book Now</h1>
-        </div>
-        <div class="content">
-          <div class="text-column">
-            <h2>Retreat at Lune Royal</h2>
-            <p>Description text goes here...</p>
-            <a href="#booking" class="booking-button">Book Now</a>
-          </div>
-          <div class="images-column">
-            <img src="../images/lune3.jpg" alt="Room 2">
-          </div>
+<header class="book-header">
+  <div class="book-title">
+    <h1>Book</h1>
+  </div>
+</header>
+
+<!--Content -->
+<section class="two-column-section">
+  <div class="left-column">
+    <h3 class="minor-heading">Your Exclusive Retreat Awaits</h3>
+    <div class="images-column">      
+      <img src="../images/book2.jpg" alt="Room 2">
+    </div>
+  </div>  
+  <div class="right-column">
+    <!--Form -->
+    <div class="booking-column">    
+      <form class="booking-form" action="/submit-form" method="post">
+        <h3 class="Form-title">Book your visit</h3>
+  
+                <label for="bookingType">Select Booking Type:</label>
+                <select id="bookingType" name="bookingType">
+                    <option value="room">Room at Lune Royal Hotel</option>
+                    <option value="restaurant">Table at Restaurant La Lune</option>
+                </select>
+            
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="name">Message:</label>
+                <input type="text" id="message" name="message">
+  
+  
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+  </div>
+</section>
+    
         </div>
       </section>
             <!--reusable footer-->

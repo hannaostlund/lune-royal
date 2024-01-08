@@ -8,7 +8,7 @@ html, body, header, main {
 header {
   background-image: url("/images/top-img.png");
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   align-items: center;
   justify-content: center;
 }
@@ -33,7 +33,12 @@ header {
   font-weight: 300;
   font-family: "montecatini-pro-normale", serif;
   font-size: 7em;
-  margin-top: 30vh;
+  margin-top: 20vh;
+}
+
+.home-page-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
 }
 
 .book-button {
@@ -45,6 +50,7 @@ header {
   border-radius: 5px;
   transition: background-color 0.8s ease;
   font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 
 .book-button:hover {
@@ -151,15 +157,56 @@ p {
   position: relative;
 }
 
-.header {
+.book-header {
   background-image: url("../images/room2.png");
   background-size: cover;
-  height: 400px;
+  height: 300px; /* Adjust the height as needed */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
+.book-title {
+  color: white;
+  font-size: 3em;
+  font-weight: 100;
+  font-family: "montecatini-pro-normale", serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #C8E4D4;
+  padding: 20px;
+}
+
+.booking-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.minor-heading {
+  font-family: "montecatini-pro-normale", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  color: black;
+}
+
+.images-column {
+  display: flex;
+  flex-direction: row;
+  max-width: 70%;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.images-column:hover img {
+  transform: translate(0, 5px);
+}
+
+/* Form Styling */
 .book-page-title {
   color: white;
   font-size: 6em;
@@ -180,7 +227,7 @@ p {
 
 .images-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .images-column img {
@@ -188,19 +235,54 @@ p {
   margin-bottom: 20px;
 }
 
-.booking-button {
-  display: block;
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #223225;
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  width: 80px;
+.booking-form {
+  background-color: #3d6f5f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.booking-button:hover {
-  background-color: #d454a3;
+.Form-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "montecatini-pro-normale", serif;
+  font-weight: 300px;
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type=date],
+input[type=text],
+input[type=submit],
+select {
+  width: calc(100% - 12px);
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type=submit] {
+  background-color: #adecbb;
+  color: #3d6f5f;
+  cursor: pointer;
+  font-family: "montecatini-pro-normale", serif;
+  width: auto;
+}
+
+input[type=submit]:hover {
+  background-color: #e785c1;
 }
 
 .name-footer {
