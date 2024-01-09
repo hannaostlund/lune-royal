@@ -6,9 +6,9 @@ html, body, header, main {
 }
 
 header {
-  background-image: url("/images/top-img1.jpg");
+  /*background-image: url('/images/top-img1.jpg');
   background-size: cover;
-  min-height: 80vh;
+  min-height: 80vh; */
   align-items: center;
   justify-content: center;
 }
