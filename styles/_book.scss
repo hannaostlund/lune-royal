@@ -20,6 +20,7 @@
 
   .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #C8E4D4;
     padding: 20px;
@@ -132,4 +133,26 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #e785c1;
+}
+
+/* Media query */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .minor-heading {
+    display: none;
+  }
+
+  .images-column {
+    display: none;
+  }
+
+  .booking-column {
+    width: 80%;
+    margin-right: 50px; 
+  }
 }

@@ -1,5 +1,5 @@
 .card-section {
-    display: flex;
+    display: flex;  
     justify-content: space-between; 
     background-color: #ffffff;
     padding: 20px;
@@ -41,3 +41,14 @@
     color: #C8E4D4;
   }
   
+  @media screen and (max-width: 768px) {
+    .card-section {
+      display: flex;  
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      width: 100%; 
+      margin: 10px 0; 
+    }
+  }

@@ -8,7 +8,7 @@ html, body, header, main {
 header {
   background-image: url("/images/top-img.png");
   background-size: cover;
-  height: 80vh;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
 }
@@ -153,6 +153,16 @@ p {
   color: #C8E4D4;
 }
 
+@media screen and (max-width: 768px) {
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 .book-room-section {
   position: relative;
 }
@@ -175,6 +185,7 @@ p {
 
 .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #C8E4D4;
   padding: 20px;
@@ -285,6 +296,24 @@ input[type=submit]:hover {
   background-color: #e785c1;
 }
 
+/* Media query */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .minor-heading {
+    display: none;
+  }
+  .images-column {
+    display: none;
+  }
+  .booking-column {
+    width: 80%;
+    margin-right: 50px;
+  }
+}
 .name-footer {
   background-color: #1d1d1d;
   color: white;
@@ -316,6 +345,11 @@ input[type=submit]:hover {
 .social-icons img {
   width: 30px;
   height: 30px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+  color: #14564B;
 }
 
 .nav-bar {

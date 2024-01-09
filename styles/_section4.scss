@@ -1,26 +1,30 @@
 .two-column-section {
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #C8E4D4;
     color: #000000;
-    height: 60vh;
+    min-height: 60vh;
   }
   
   .left-column {
     padding: 20px;
+    max-width: 60%;
+    order: 1; 
   }
   
   .right-column {
     padding: 20px;
-    max-width: 60%;
+    max-width: 40%;
     margin-top: 30px;
+    order: 2;
   }
 
   .resized-image {
     margin-top: 30px;
     max-height: 20vh;
-    max-width: 20%;
+    max-width: 100%;
     height: auto;
   }
   
@@ -32,21 +36,38 @@
   p {
     line-height: 1.5;
   }
+
+  /* Media query */
+  @media screen and (max-width: 500px) {
+    .two-column-section {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .right-column {
+      max-width: 100%;
+      order: 3;
+    }
+    
+    .resized-image {
+      display: none;
+    }
+  }
   
-  /* added this to make the image resize*/
   @media screen and (max-width: 768px) {
     .two-column-section {
       flex-direction: column;
-      height: auto; /* Adjust height as needed */
+      height: auto;
     }
-  
+    
     .right-column {
-      max-width: 100%; /* Occupy full width */
+      max-width: 100%;
     }
-  
+    
     .resized-image {
-      margin-top: 20px; /* Adjust spacing */
-      max-width: 100%; /* Resize image to full width */
-      max-height: auto; /* Allow height to adjust accordingly */
+      margin-top: 20px;
+      max-width: 50%;
+      max-height: auto;
     }
   }
+  
